@@ -46,23 +46,22 @@ You only need to do **Setup** and **Calibration** once. Start at **Test** for ea
    | White          | A−    |
    | Green          | A+    |
 
-   **Receiver → Arduino**
+   **ESC → Arduino**
 
-   | Receiver                        | Arduino       |
-   |---------------------------------|---------------|
-   | Throttle channel signal (white) | D10 (digital) |
-   | Ground                          | GND (analog)  |
+   | ESC                              | Arduino       |
+   |----------------------------------|---------------|
+   | Throttle channel signal (yellow) | D10 (digital) |
+   | Ground                           | GND (analog)  |
 
-   Don't connect the receiver's + wire.
-
-2. Hold the rig, keep everyone out of the prop's path, and wear eye protection.
+   **Never connect the ESC + (red) wire.**
+2. Hold the rig down, keep everyone out of the prop's path, and wear eye protection.
 3. Turn the transmitter on with the throttle all the way down, then plug in the battery/fuse.
 4. With hands off and the prop still, open a terminal in the project folder and run:
    ```
    python static_thrust_testing-logging.py
    ```
 5. Wait for `Complete!`. Then step the throttle up about 10% at a time, holding each step (especially full throttle), and back down to 0.
-6. Press **Ctrl+C** to stop, then unplug the battery. The CSV is saved in the same folder.
+6. Press **Ctrl+C** to stop, then unplug the battery. The CSV is saved in the same folder, and can be opened as an excel sheet. Clean up the time before and after the test so that the data is easily readable, and create a nice graphic with _labeled_ maximum! 
 
 ## Notes
 
