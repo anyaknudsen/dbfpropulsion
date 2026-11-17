@@ -61,7 +61,7 @@ You only need to do **Setup** and **Calibration** once. Start at **Test** for ea
    python static_thrust_testing-logging.py
    ```
 5. Wait for `Complete!`. Then step the throttle up about 10% at a time, holding each step (especially full throttle), and back down to 0.
-6. Press **Ctrl+C** to stop, then unplug the battery. The CSV is saved in the same folder, and can be opened as an excel sheet. Clean up the time before and after the test so that the data is easily readable, and create a nice graphic with _labeled_ maximum! 
+6. Press **Ctrl+C** to stop, then unplug the battery. The CSV is saved in the same folder, and can be opened as an excel sheet. Clean up the time before and after the test so that the data is easily readable, **add the weight of the rig**, and create a nice graphic with _labeled_ maximum! 
 
 ## Notes
 
