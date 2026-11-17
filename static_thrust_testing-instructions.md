@@ -12,7 +12,7 @@ You only need to do **Setup** and **Calibration** once. Start at **Test** for ea
    ```
    python -m pip install pyserial
    ```
-4. Open `RPMAndThrust.ino`, select **Board: Arduino Uno** and the Uno's COM port, then upload.
+4. Open `static_thrust_testing-code.ino`, select **Board: Arduino Uno** and the Uno's COM port, then upload.
 
 ## Calibration
 
@@ -59,7 +59,7 @@ You only need to do **Setup** and **Calibration** once. Start at **Test** for ea
 3. Turn the transmitter on with the throttle all the way down, then plug in the battery/fuse.
 4. With hands off and the prop still, open a terminal in the project folder and run:
    ```
-   python log_thrust.py
+   python static_thrust_testing-logging.py
    ```
 5. Wait for `Complete!`. Then step the throttle up about 10% at a time, holding each step (especially full throttle), and back down to 0.
 6. Press **Ctrl+C** to stop, then unplug the battery. The CSV is saved in the same folder.
